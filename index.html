@@ -7,17 +7,9 @@
   html, body {
     height: 100%;
     margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
   }
-h1 {
-    text-align: center;
-    margin-top: 0;
-    padding-top: 20px;
-   font-size: 35px;
-  }
-h3 {
-   font-size: 32px;
-}
- 
+
   body {
     background-image: url("background.jpg");
     background-size: cover;
@@ -25,12 +17,58 @@ h3 {
     background-repeat: no-repeat;
     color: white;
   }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 40px;
+    font-size: 35px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+  }
+
+  .title-wrap {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h3 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .video-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .video-row video {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
 </style>
 </head>
 <body>
-  <h1>YASAI↯</h1>
+
+  <div class="title-wrap">
+    <h1>YASAI↯</h1>
+  </div>
+
   <h3>Dynamike Clips</h3>
-  <video src="clip.mp4" controls width="600"></video>
-  <video src="clip2.mp4" controls width="600"></video>
+
+  <div class="video-row">
+    <video src="clip.mp4" controls width="500"></video>
+    <video src="clip2.mp4" controls width="500"></video>
+  </div>
+
 </body>
 </html>

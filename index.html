@@ -33,6 +33,7 @@
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
+    cursor: pointer;
   }
 
   .title-wrap {
@@ -65,8 +66,10 @@
 <body>
 
   <div class="title-wrap">
-    <h1>YASAI↯</h1>
+    <h1 onclick="document.getElementById('clickSound').play()">YASAI↯</h1>
   </div>
+
+  <audio id="clickSound" src="sound.mp3"></audio>
 
   <h3>Dynamike Clips</h3>
 
